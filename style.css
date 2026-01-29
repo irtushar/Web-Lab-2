@@ -5,49 +5,51 @@
   font-family: Arial, sans-serif;
 }
 
-/*  HEADER STYLING  */
+/*  HEADER  */
 .top-header {
   display: flex;
   justify-content: space-between;
-  padding: 12px 20px;
+  align-items: center;
+  padding: 14px 50px;
   border-bottom: 1px solid #ddd;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .top-news span {
-  margin-left: 15px;
+  margin-left: 20px;
   font-size: 14px;
+  color: #555;
 }
 
-/*  NAVIGATION BAR  */
+/*  NAVBAR  */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 12px 50px;
   border-bottom: 1px solid #ddd;
 }
 
 .nav-left a {
   text-decoration: none;
   color: black;
-  margin-right: 15px;
+  margin-right: 22px;
   font-size: 14px;
 }
 
-.nav-left a:hover {
+.nav-left a:hover,
+.nav-btn:hover {
   color: red;
 }
 
-/* Right side navigation */
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .nav-btn {
@@ -56,11 +58,7 @@
   font-size: 14px;
 }
 
-.nav-btn:hover {
-  color: red;
-}
-
-/*  SEARCH BOX  */
+/*  SEARCH  */
 .search-box {
   display: flex;
   border: 1px solid #ccc;
@@ -68,103 +66,156 @@
 
 .search-box input {
   border: none;
-  padding: 4px 6px;
+  padding: 6px 8px;
+  width: 160px;
   outline: none;
-  width: 120px;
 }
 
 .search-box button {
   border: none;
+  padding: 6px 10px;
   background: #f2f2f2;
   cursor: pointer;
-  padding: 4px 6px;
 }
 
-/*  MAIN LAYOUT GRID  */
+/*  MAIN LAYOUT */
 .container {
+  max-width: 1400px; /* FIXED WIDTH */
+  margin: 30px auto; /* CENTERED */
+  padding: 0 50px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.3fr 2.8fr 1.2fr;
+  gap: 35px;
+}
+
+/*  LEFT COLUMN */
+.left .with-img {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.left .with-img img {
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.left .with-img h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.left .with-img p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.left .with-img small {
+  color: gray;
+}
+
+/*  MIDDLE COLUMN  */
+.middle img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.middle h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.middle p {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.middle small {
+  color: gray;
+}
+
+/*  Horizontal News  */
+.horizontal-news {
+  display: flex;
   gap: 20px;
-  padding: 20px;
+  margin-top: 22px;
+  align-items: center;
 }
 
-/*  NEWS ITEMS  */
-.news-item {
-  margin-bottom: 20px;
+.horizontal-news img {
+  width: 240px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
-.news-item p {
+.horizontal-news h4 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.horizontal-news p {
   font-size: 14px;
   color: #444;
 }
 
-.news-item small {
-  color: gray;
-}
-
-/* Left column news with images */
-.left .with-img {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.left .with-img img {
-  width: 80px;
-  height: 60px;
-  object-fit: cover;
-}
-
-.left .with-img h3 {
-  font-size: 14px;
-}
-
-/*  MIDDLE CONTENT  */
-.middle img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.middle h2 {
-  margin-bottom: 10px;
-}
-
-/* Horizontal related news */
-.horizontal-news {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.horizontal-news img {
-  width: 160px;
-}
-
 /*  RIGHT COLUMN  */
+.right .news-item {
+  margin-bottom: 30px;
+}
+
+.right .news-item h4 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.right .news-item p {
+  font-size: 14px;
+  color: #444;
+}
+
 .ad-box {
-  height: 250px;
+  height: 320px;
   background: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   font-weight: bold;
 }
 
-/*  BOTTOM NEWS GRID  */
+/* BOTTOM GRID  */
 .news-grid {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
+  gap: 26px;
 }
 
 .card img {
   width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .card h4 {
-  margin: 8px 0;
+  margin: 10px 0 5px;
+  font-size: 17px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
 }
 
 .card small {
