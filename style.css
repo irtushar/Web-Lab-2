@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Header ===== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-news span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.nav-left a:hover {
+  color: red;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.nav-btn:hover {
+  color: red;
+}
+
+/* ===== Search ===== */
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+.search-box input {
+  border: none;
+  padding: 4px 6px;
+  outline: none;
+  width: 120px;
+}
+
+.search-box button {
+  border: none;
+  background: #f2f2f2;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+/* ===== Layout ===== */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== News Items ===== */
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item p {
+  font-size: 14px;
+  color: #444;
+}
+
+.news-item small {
+  color: gray;
+}
+
+/* ===== Middle ===== */
+.middle img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.middle h2 {
+  margin-bottom: 10px;
+}
+
+/* ===== Horizontal News ===== */
+.horizontal-news {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.horizontal-news img {
+  width: 160px;
+}
+
+/* ===== Right ===== */
+.ad-box {
+  height: 250px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ===== Bottom Grid ===== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h4 {
+  margin: 8px 0;
+}
+
+.card small {
+  color: gray;
+}
