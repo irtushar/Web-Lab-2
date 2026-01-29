@@ -5,7 +5,7 @@
   font-family: Arial, sans-serif;
 }
 
-/*  Header  */
+/*  HEADER STYLING  */
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   font-size: 14px;
 }
 
-/*  Navbar  */
+/*  NAVIGATION BAR  */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -43,6 +43,7 @@
   color: red;
 }
 
+/* Right side navigation */
 .nav-right {
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@
   color: red;
 }
 
-/*  Search  */
+/*  SEARCH BOX  */
 .search-box {
   display: flex;
   border: 1px solid #ccc;
@@ -79,7 +80,7 @@
   padding: 4px 6px;
 }
 
-/*  Layout  */
+/*  MAIN LAYOUT GRID  */
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -87,7 +88,7 @@
   padding: 20px;
 }
 
-/*  News Items  */
+/*  NEWS ITEMS  */
 .news-item {
   margin-bottom: 20px;
 }
@@ -101,11 +102,10 @@
   color: gray;
 }
 
-/*  LEFT COLUMN */
+/* Left column news with images */
 .left .with-img {
   display: flex;
   gap: 10px;
-  align-items: flex-start;
   margin-bottom: 15px;
 }
 
@@ -117,15 +117,9 @@
 
 .left .with-img h3 {
   font-size: 14px;
-  margin-bottom: 4px;
 }
 
-.left .with-img p {
-  font-size: 13px;
-  color: #444;
-}
-
-/*  Middle  */
+/*  MIDDLE CONTENT  */
 .middle img {
   width: 100%;
   margin-bottom: 10px;
@@ -135,7 +129,7 @@
   margin-bottom: 10px;
 }
 
-/*  Horizontal News  */
+/* Horizontal related news */
 .horizontal-news {
   display: flex;
   gap: 10px;
@@ -146,7 +140,7 @@
   width: 160px;
 }
 
-/*  Right  */
+/*  RIGHT COLUMN  */
 .ad-box {
   height: 250px;
   background: #eee;
@@ -157,7 +151,7 @@
   font-weight: bold;
 }
 
-/* Bottom Grid */
+/*  BOTTOM NEWS GRID  */
 .news-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
